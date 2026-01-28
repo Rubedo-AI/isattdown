@@ -10,12 +10,14 @@
     <style>
         :root {
             --att-blue: #00a8e0;
-            --att-dark: #1a1a1a;
+            --att-dark: #0d0d0d;
             --warning: #f59e0b;
             --danger: #ef4444;
             --success: #22c55e;
-            --gray: #6b7280;
-            --light-gray: #f3f4f6;
+            --gray: #9ca3af;
+            --light-gray: #1a1a1a;
+            --card-bg: #141414;
+            --text: #e5e5e5;
         }
         
         * {
@@ -26,8 +28,8 @@
         
         body {
             font-family: 'Inter', sans-serif;
-            background: var(--light-gray);
-            color: var(--att-dark);
+            background: var(--att-dark);
+            color: var(--text);
             min-height: 100vh;
         }
         
@@ -48,11 +50,11 @@
         }
         
         .main-status {
-            background: white;
+            background: var(--card-bg);
             margin: 30px auto;
             max-width: 800px;
             border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
             overflow: hidden;
         }
         
@@ -88,7 +90,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 0;
-            border-bottom: 1px solid #e5e7eb;
+            border-bottom: 1px solid #333;
         }
         
         .metric:last-child {
@@ -130,21 +132,21 @@
         }
         
         .card {
-            background: white;
+            background: var(--card-bg);
             border-radius: 16px;
             padding: 30px;
             margin-bottom: 20px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
         }
         
         .card h2 {
             font-size: 1.3rem;
             margin-bottom: 20px;
-            color: var(--att-dark);
+            color: var(--att-blue);
         }
         
         .excuse {
-            background: var(--light-gray);
+            background: rgba(255,255,255,0.05);
             border-left: 4px solid var(--att-blue);
             padding: 20px;
             margin-bottom: 15px;
@@ -157,7 +159,7 @@
         
         .excuse p {
             font-style: italic;
-            color: #374151;
+            color: var(--text);
         }
         
         .excuse cite {
@@ -175,7 +177,7 @@
         }
         
         .stat-box {
-            background: var(--light-gray);
+            background: rgba(255,255,255,0.05);
             padding: 25px;
             border-radius: 12px;
             text-align: center;
@@ -205,7 +207,7 @@
             top: 0;
             bottom: 0;
             width: 2px;
-            background: #e5e7eb;
+            background: #333;
         }
         
         .timeline-item {
@@ -235,7 +237,7 @@
         }
         
         .timeline-text {
-            color: #374151;
+            color: var(--text);
         }
         
         .comparison {
